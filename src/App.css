@@ -1,38 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: #00ffcc;
+  scroll-behavior: smooth;
+}
+
 .App {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  padding: 100px 20px;
   text-align: center;
+  border-bottom: 1px solid rgba(0, 255, 204, 0.2);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero {
+  background: #0f0f0f;
+  padding-top: 120px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero h1 {
+  font-size: 4rem;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hero h2 {
+  font-size: 2rem;
+  color: #ff00ff;
+  text-shadow: 0 0 5px #ff00ff;
 }
 
-.App-link {
-  color: #61dafb;
+.hero a {
+  color: #00ffcc;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border: 1px solid #00ffcc;
+  padding: 10px 20px;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00ffcc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.project-card {
+  background: #1a1a1a;
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #00ffcc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ffcc33;
+}
+
+a {
+  color: #00ffcc;
 }
