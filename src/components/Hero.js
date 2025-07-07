@@ -8,7 +8,8 @@ function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
             >
-                TALAL NADEEM
+                Mahdi Jaffri
+
             </motion.h1>
             <motion.h2
                 initial={{ opacity: 0, y: 30 }}
