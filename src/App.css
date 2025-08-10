@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap');
 
 /* Reset + fix overflow */
@@ -10,7 +9,7 @@
 
 body {
   font-family: 'Orbitron', sans-serif;
-  background-color: #0a0a0a;
+  background-color: #a11414;
   color: #fff;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -31,8 +30,15 @@ body {
 }
 
 @keyframes float {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  50% { transform: translate(100px, -100px) rotate(180deg); }
+
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(100px, -100px) rotate(180deg);
+  }
 }
 
 .App {
@@ -433,12 +439,12 @@ section {
   .hero h1 {
     font-size: 2.2rem;
   }
-  
+
   .project-card,
   .skill-category {
     padding: 20px;
   }
-  
+
   .nav-links {
     flex-wrap: wrap;
     justify-content: center;
