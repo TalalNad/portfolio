@@ -46,7 +46,7 @@ function Projects() {
     };
 
     return (
-        <section className="projects" id="projects">
+        <section className="projects" id="projects" style={{textAlign: 'center'}}>
             <motion.h2
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}

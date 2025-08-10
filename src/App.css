@@ -108,6 +108,7 @@ section {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+  text-align: center;
 }
 
 .hero {
@@ -133,6 +134,38 @@ section {
   color: #ff00ff;
   margin-bottom: 30px;
   font-weight: 400;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.profile-image {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid transparent;
+  background: linear-gradient(135deg, #00ffff, #ff00ff);
+  padding: 4px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 50px rgba(255, 0, 255, 0.4);
+}
+
+.profile-content {
+  flex: 1;
+  max-width: 500px;
+  text-align: left;
 }
 
 .hero p {
@@ -400,6 +433,21 @@ section {
   .hero p {
     font-size: 1rem;
     padding: 0 20px;
+  }
+
+  .profile-section {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .profile-content {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .profile-image {
+    width: 220px;
+    height: 220px;
   }
 
   .cta-buttons {

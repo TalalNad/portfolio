@@ -37,7 +37,7 @@ function Skills() {
     };
 
     return (
-        <section className="skills" id="skills">
+        <section className="skills" id="skills" style={{textAlign: 'center'}}>
             <motion.h2
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
