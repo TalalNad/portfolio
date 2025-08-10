@@ -1,29 +1,53 @@
+
 import { motion } from 'framer-motion';
 
 function About() {
     return (
         <section className="about" id="about">
             <motion.h2
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
             >
                 ABOUT ME
             </motion.h2>
             <motion.p
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
             >
-                I develop web and mobile frontends with an eye for sleek UI, UX and animation. I also work with DevOps tools and cloud services to automate & deploy robust applications.
+                I'm a passionate Frontend Developer and DevOps Engineer with a keen eye for creating seamless user experiences. 
+                My expertise spans modern web technologies, cloud infrastructure, and automation tools. I thrive on turning 
+                complex problems into elegant, scalable solutions that drive business growth and user satisfaction.
             </motion.p>
 
-            <ul className="about-tags">
-                <li>🧠 UI Engineering</li>
-                <li>⚙️ DevOps & Pipelines</li>
-                <li>🎨 Design Systems</li>
-                <li>📱 Responsive & Mobile-first</li>
-            </ul>
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+            >
+                <ul className="about-tags">
+                    <motion.li whileHover={{ scale: 1.05 }}>
+                        <strong>🧠 Frontend Engineering</strong>
+                        <br />React, Vue, Angular, TypeScript
+                    </motion.li>
+                    <motion.li whileHover={{ scale: 1.05 }}>
+                        <strong>⚙️ DevOps & Cloud</strong>
+                        <br />AWS, Docker, Kubernetes, CI/CD
+                    </motion.li>
+                    <motion.li whileHover={{ scale: 1.05 }}>
+                        <strong>🎨 UI/UX Design</strong>
+                        <br />Design Systems, Figma, Animation
+                    </motion.li>
+                    <motion.li whileHover={{ scale: 1.05 }}>
+                        <strong>📱 Mobile-First</strong>
+                        <br />Responsive Design, PWA, Performance
+                    </motion.li>
+                </ul>
+            </motion.div>
         </section>
     );
 }
