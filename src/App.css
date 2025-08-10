@@ -109,6 +109,11 @@ section {
   margin: 0 auto;
   position: relative;
   text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero {
@@ -146,9 +151,9 @@ section {
 }
 
 .profile-image {
-  width: 280px;
-  height: 280px;
-  border-radius: 50%;
+  width: 350px;
+  height: 420px;
+  border-radius: 20px;
   object-fit: cover;
   border: 4px solid transparent;
   background: linear-gradient(135deg, #00ffff, #ff00ff);
@@ -253,6 +258,8 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   list-style: none;
+  width: 100%;
+  max-width: 1000px;
 }
 
 .about-tags li {
@@ -280,6 +287,8 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   margin-top: 50px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .skill-category {
@@ -328,6 +337,8 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 30px;
   margin-top: 50px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .project-card {

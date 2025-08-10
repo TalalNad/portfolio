@@ -32,7 +32,7 @@ function Hero() {
                 transition={{ duration: 1, delay: 0.6 }}
             >
                 <motion.img
-                    src="/attached_assets/702A7D00-E92C-481A-AAA6-6532A8828D22 2_1754869046948.JPEG"
+                    src={require('../attached_assets/702A7D00-E92C-481A-AAA6-6532A8828D22 2.JPEG')}
                     alt="Talal Nadeem - Frontend Developer & DevOps Engineer"
                     className="profile-image"
                     initial={{ opacity: 0, scale: 0.8 }}
