@@ -28,6 +28,11 @@ function Projects() {
             desc: 'Professional web development agency website featuring modern UI/UX design, responsive layouts, and optimized performance for client showcase.',
             tags: 'HTML5 • CSS3 • JavaScript • GSAP Animations'
         },
+        {
+            title: 'LUNGS Health Check',
+            desc: 'An AI model which tells difference between Covid 19, TB and a normal lungs by scanning their respective XRAYs.',
+            tags: 'Python • Pytorch • Tensorflow • CNN • Computer Vision'
+        },
     ];
 
     const containerVariants = {
@@ -46,7 +51,7 @@ function Projects() {
     };
 
     return (
-        <section className="projects" id="projects" style={{textAlign: 'center'}}>
+        <section className="projects" id="projects" style={{ textAlign: 'center' }}>
             <motion.h2
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -55,8 +60,8 @@ function Projects() {
             >
                 FEATURED PROJECTS
             </motion.h2>
-            
-            <motion.div 
+
+            <motion.div
                 className="project-grid"
                 variants={containerVariants}
                 initial="hidden"
@@ -68,7 +73,7 @@ function Projects() {
                         className="project-card"
                         key={idx}
                         variants={itemVariants}
-                        whileHover={{ 
+                        whileHover={{
                             scale: 1.03,
                             transition: { duration: 0.2 }
                         }}
