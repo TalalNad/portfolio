@@ -19,14 +19,14 @@ function Contact() {
                 viewport={{ once: true }}
             >
                 <p>
-                    Ready to bring your next project to life? I'm always excited to collaborate on innovative solutions 
-                    and challenging projects. Whether you're looking for frontend development, DevOps implementation, 
+                    Ready to bring your next project to life? I'm always excited to collaborate on innovative solutions
+                    and challenging projects. Whether you're looking for frontend development, DevOps implementation,
                     or technical consultation, let's discuss how we can work together.
                 </p>
                 <br />
                 <p>
                     Drop me a line at{' '}
-                    <a href="mailto:talal.nadeem@systems.ltd">talal.nadeem@systems.ltd</a>
+                    <a href="mailto:talalnadeem.7.tn@gmail.com">talalnadeem.7.tn@gmail.com</a>
                 </p>
                 <p style={{ marginTop: '20px', fontSize: '1rem', color: '#999' }}>
                     Available for freelance projects and full-time opportunities
