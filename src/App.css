@@ -260,6 +260,9 @@ section {
   list-style: none;
   width: 100%;
   max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
 }
 
 .about-tags li {
@@ -288,7 +291,11 @@ section {
   gap: 30px;
   margin-top: 50px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
+  /* widened for large screens */
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
 }
 
 .skill-category {
@@ -338,7 +345,11 @@ section {
   gap: 30px;
   margin-top: 50px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
+  /* widened for large screens */
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
 }
 
 .project-card {
