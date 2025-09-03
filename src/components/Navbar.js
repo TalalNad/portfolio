@@ -5,13 +5,13 @@ function Navbar() {
     return (
         <nav className="navbar">
             <div className="logo">Talal<span> Nadeem</span></div>
-            <div className="nav-links">
-                <Link to="home" smooth={true} duration={500}>{/* home */}</Link>
-                <Link to="about" smooth={true} duration={500}>{/* about */}</Link>
-                <Link to="skills" smooth={true} duration={500}>{/* skills */}</Link>
-                <Link to="projects" smooth={true} duration={500}>{/* projects */}</Link>
-                <Link to="contact" smooth={true} duration={500}>{/* contact */}</Link>
-            </div>
+            <ul>
+                <li><Link to="hero" smooth={true} duration={500}>Home</Link></li>
+                <li><Link to="about" smooth={true} duration={500}>About</Link></li>
+                <li><Link to="skills" smooth={true} duration={500}>Skills</Link></li>
+                <li><Link to="projects" smooth={true} duration={500}>Projects</Link></li>
+                <li><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
+            </ul>
         </nav>
     );
 }
