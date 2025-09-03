@@ -57,7 +57,7 @@ function Skills() {
                 {skillCategories.map((category, idx) => (
                     <motion.div
                         className="skill-category"
-                        key={idx}
+                        key={`category-${idx}-${category.title}`}
                         variants={itemVariants}
                         whileHover={{ 
                             scale: 1.02,
@@ -68,7 +68,7 @@ function Skills() {
                         <h3>{category.title}</h3>
                         <div className="skill-list">
                             {category.skills.map((skill, skillIdx) => (
-                                <span key={skillIdx} className="skill-tag">
+                                <span key={`skill-${idx}-${skillIdx}-${skill}`} className="skill-tag">
                                     {skill}
                                 </span>
                             ))}

@@ -30,19 +30,19 @@ function About() {
                 viewport={{ once: true }}
             >
                 <ul className="about-tags">
-                    <motion.li whileHover={{ scale: 1.05 }}>
+                    <motion.li key="frontend" whileHover={{ scale: 1.05 }}>
                         <strong>🧠 Frontend Engineering</strong>
                         <br />React, Vue, Angular, TypeScript
                     </motion.li>
-                    <motion.li whileHover={{ scale: 1.05 }}>
+                    <motion.li key="devops" whileHover={{ scale: 1.05 }}>
                         <strong>⚙️ DevOps & Cloud</strong>
                         <br />AWS, Docker, Kubernetes, CI/CD
                     </motion.li>
-                    <motion.li whileHover={{ scale: 1.05 }}>
+                    <motion.li key="design" whileHover={{ scale: 1.05 }}>
                         <strong>🎨 UI/UX Design</strong>
                         <br />Design Systems, Figma, Animation
                     </motion.li>
-                    <motion.li whileHover={{ scale: 1.05 }}>
+                    <motion.li key="mobile" whileHover={{ scale: 1.05 }}>
                         <strong>📱 Mobile-First</strong>
                         <br />Responsive Design, PWA, Performance
                     </motion.li>

@@ -13,7 +13,7 @@ const Projects = () => {
             <h2>Projects</h2>
             <div className="projects-grid">
                 {projects.map((proj, i) => (
-                    <Tilt glareEnable={true} glareMaxOpacity={0.4} scale={1.05} key={i}>
+                    <Tilt glareEnable={true} glareMaxOpacity={0.4} scale={1.05} key={`project-${i}-${proj.title}`}>
                         <div className="project-card">
                             <h3>{proj.title}</h3>
                             <p>{proj.desc}</p>
