@@ -1,72 +1,44 @@
+import React from "react";
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+import profile from "../attached_assets/702A7D00-E92C-481A-AAA6-6532A8828D22 2.JPEG";
 
-import { motion } from 'framer-motion';
+const Hero = () => {
+    const particlesInit = async (main) => {
+        await loadFull(main);
+    };
 
-function Hero() {
     return (
-        <section className="hero" id="home">
-            <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8 }}
-            >
-                <motion.h1
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.2 }}
-                >
-                    TALAL NADEEM
-                </motion.h1>
-                <motion.h2
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.4 }}
-                >
-                    FRONTEND DEVELOPER & DEVOPS ENGINEER
-                </motion.h2>
-            </motion.div>
-
-            <motion.div 
-                className="profile-section"
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.6 }}
-            >
-                <motion.img
-                    src={require('../attached_assets/702A7D00-E92C-481A-AAA6-6532A8828D22 2.JPEG')}
-                    alt="Talal Nadeem - Frontend Developer & DevOps Engineer"
-                    className="profile-image"
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.8, delay: 0.8 }}
-                    whileHover={{ 
-                        scale: 1.05,
-                        transition: { duration: 0.3 }
-                    }}
-                />
-                <motion.div 
-                    className="profile-content"
-                    initial={{ opacity: 0, x: 30 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1, delay: 1 }}
-                >
-                    <p>
-                        Passionate about crafting exceptional digital experiences through innovative frontend solutions and robust DevOps practices. I transform ideas into scalable, user-centric applications that drive business growth and deliver outstanding user experiences.
-                    </p>
-                </motion.div>
-            </motion.div>
-
-            <motion.div 
-                className="cta-buttons"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 1.2 }}
-            >
-                <a href="#projects">🚀 View Projects</a>
-                <a href="#contact">📬 Contact Me</a>
-                <a href="#about">👨‍💻 About Me</a>
-            </motion.div>
+        <section className="hero">
+            <Particles
+                id="tsparticles"
+                init={particlesInit}
+                options={{
+                    background: { color: "transparent" },
+                    fpsLimit: 60,
+                    interactivity: {
+                        events: { onHover: { enable: true, mode: "repulse" } },
+                        modes: { repulse: { distance: 100, duration: 0.4 } },
+                    },
+                    particles: {
+                        color: { value: "#00ffff" },
+                        links: { color: "#ff00ff", distance: 150, enable: true },
+                        move: { enable: true, speed: 2 },
+                        number: { value: 50 },
+                        opacity: { value: 0.5 },
+                        shape: { type: "circle" },
+                        size: { value: { min: 1, max: 5 } },
+                    },
+                }}
+            />
+            <h1>Talal Nadeem</h1>
+            <h2>FRONTEND DEVELOPER & DEVOPS ENGINEER</h2>
+            <div className="profile-image">
+                <img src={profile} alt="Talal Nadeem" />
+            </div>
         </section>
     );
-}
+};
 
 export default Hero;
+
