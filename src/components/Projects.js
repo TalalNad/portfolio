@@ -7,7 +7,7 @@ const Projects = () => {
         { title: "ConnecTS", desc: "Teacher-student platform with chat & video." },
         { title: "DevXhyp", desc: "Futuristic portfolio with animations." },
         { title: "Loop", desc: "End-to-end encrypted chat application with real-time messaging." },
-        { title: "DiaTongue", desc: "Mobile application for detecting type 2 diabetes." }
+        { title: "DiaTongue", desc: "Mobile application for detecting type 2 diabetes & integrated chatbot for general diabetes related queries." }
     ];
 
     return (
