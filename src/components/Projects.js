@@ -6,6 +6,8 @@ const Projects = () => {
         { title: "Crickbook", desc: "Book cricket fields online with ease." },
         { title: "ConnecTS", desc: "Teacher-student platform with chat & video." },
         { title: "DevXhyp", desc: "Futuristic portfolio with animations." },
+        { title: "Loop", desc: "End-to-end encrypted chat application with real-time messaging." },
+        { title: "DiaTongue", desc: "Mobile application for detecting type 2 diabetes." }
     ];
 
     return (
